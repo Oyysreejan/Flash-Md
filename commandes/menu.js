@@ -24,14 +24,14 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault('Africa/Nairobi');
+    moment.tz.setDefault('India/Kolkata');
 
 // Create a date and time in EAT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
+const temps = moment().format('00:00:00');
+const date = moment().format('00/00/0000');
 
   let infoMsg =  `
-╭────✧𝐅𝐋𝐀𝐒𝐇-𝐌𝐃✧────◆
+╭────✧𝐏𝐈𝐔-𝐌𝐃✧────◆
 │🌠 *Préfix* : ${s.?}
 │🌠 *User* : ${s.queen_Piu}
 │🌠 *Mode* : ${public}
@@ -46,7 +46,7 @@ const date = moment().format('DD/MM/YYYY');
 
   let menuMsg=`  
 
-*FLASH-MD COMMANDS :*
+*𝐏𝐈𝐔-𝐌𝐃 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 :*
 ◇                             ◇
 `;
 
@@ -64,7 +64,7 @@ const date = moment().format('DD/MM/YYYY');
 ◇            ◇
 *————— ★ —————*
 
-  *📌France King®🐐²0²⁴*                                         
+  *𝐐𝐮𝐞𝐞𝐧 𝐏𝐢𝐮*                                         
 *╰═════════════⊷*
 `;
 
@@ -72,7 +72,7 @@ const date = moment().format('DD/MM/YYYY');
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝐏𝐢𝐮-𝐌𝐝*, développé par 𝐏𝐢𝐮" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -82,7 +82,7 @@ const date = moment().format('DD/MM/YYYY');
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "*📌France King*" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "*𝐐𝐮𝐞𝐞𝐧 𝐏𝐢𝐮*" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
