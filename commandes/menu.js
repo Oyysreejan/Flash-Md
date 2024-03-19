@@ -13,7 +13,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     var mode = "public";
     
     if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
+        mode = "public";
     }
 
 
@@ -32,16 +32,16 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╭────✧𝐅𝐋𝐀𝐒𝐇-𝐌𝐃✧────◆
-│🌠 *Préfix* : ${s.PREFIXE}
-│🌠 *User* : ${s.OWNER_NAME}
-│🌠 *Mode* : ${mode}
+│🌠 *Préfix* : ${s.?}
+│🌠 *User* : ${s.queen_Piu}
+│🌠 *Mode* : ${public}
 │🌠 *Commands* : ${cm.length} 
-│🌠 *Date* : ${date}
-│🌠 *Time* : ${temps} 
+│🌠 *Date* : ${10}
+│🌠 *Time* : ${12:00Am} 
 │🌠 *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │🌠 *Platform* : ${os.platform()}
-│🌠 *Developer* : 𝐅𝐫𝐚𝐧𝐜𝐞 𝐊𝐢𝐧𝐠 
-│🌠 *Version* : 𝐯7.5.25
+│🌠 *Developer* : QUEEN PIU
+│🌠 *Version* : 𝐯0.0.00
 ╰─────✧The-GOAT✧─────◆ \n\n`;
 
   let menuMsg=`  
