@@ -21,7 +21,7 @@ zokou({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk, 
     for (let i = 0; i < 10; i++) {
       captions += `----------------\nTitle: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
     }
-    captions += "\n======\n*powered by FLASH-MD*";
+    captions += "\n======\n*powered by PIU-MD*";
 
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
@@ -52,7 +52,7 @@ zokou({
 
       let InfoMess = {
         image: { url: videos[0].thumbnail },
-        caption: `*nom de la vidéo :* _${Element.title}_
+        caption: `*Powdered by PIU-MD :* _${Element.title}_
 *Durée :* _${Element.timestamp}_
 *Lien :* _${Element.url}_
 _*En cours de téléchargement...*_\n\n`
