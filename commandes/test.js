@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 zokou({ nomCom: "repo", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = 'Hello This is  *FLASH-MD* \n\n ' + "The Following is *FLASH-MD Repo.*";
-    let d = ' https://github.com/franceking1/Flash-Md';
+    let z = 'Hello This is  *PIU-MD* \n\n ' + "The Following is *PIU-MD Repo.*";
+    let d = ' Undifferentiated';
     let varmess = z + d;
     var img = 'https://telegra.ph/file/f1f2303ff4e39b0a3b6b3.jpg';
     await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
@@ -19,7 +19,7 @@ console.log("mon test");
 
 async function  execute  (origineMessage,zok) {
   console.log("Commande saisie !!!s")
-   let z ='Salut je m\'appelle *FLASH-MD* \n\n '+'je suis un bot Whatsapp Multi-appareil '
+   let z ='Salut je m\'appelle *PIU-MD* \n\n '+'je suis un bot Whatsapp Multi-appareil '
       let d =' developpé par *France King*'
       let varmess=z+d
       var img='https://telegra.ph/file/13d63c21c1a665bfd8324.jpg'
