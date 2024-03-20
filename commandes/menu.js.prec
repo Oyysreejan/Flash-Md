@@ -35,28 +35,28 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
       
     ╚═════ ▓▓ ࿇ ▓▓ ═════╝*/
     /* menuMsg+=`
-   ╔════ ▓▓ ࿇FLASH-MD࿇ ▓▓ ════╗
+   ╔════ ▓▓ ࿇PIU-MD࿇ ▓▓ ════╗
   
    ||     Préfixe : ${s.prefixe}
-   ||      Owner : ${s.OWNER_NAME}
+   ||      Owner : ${s.QUEEN_PIU}
    ||      Commands : ${cm.length}
    ||      Date : ${date}
    ||      Hour : ${temps}
    ||      Mém: ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
-   ||  Developer : France King 
+   ||  Developer : PIU QUEEN 
    ||
    ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
     menuMsg += `
-╔════----*FLASH-MD-----
+╔════----*PIU-MD-----
 ║    Préfixe : ${s.PREFIXE}
-║    Owner : ${s.OWNER_NAME}    
+║    Owner : ${s.QUEEN_PIU}    
 ║    Mode : ${mode}
 ║    Commands :${cm.length}
 ║    Date : ${date}
 ║    Hour: ${temps}
 ║    Mém : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ║    Platform : ${os.platform()}
-║    Déveloper : France King
+║    Déveloper : PIU QUEEN
 ╚════--------------- \n\n`;
     for (const cat in coms) {
         if (!emoji[cat]) {
@@ -70,7 +70,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     //  var link = "https://wallpapercave.com/uwp/uwp3860299.jpeg";
     var link = s.IMAGE_MENU;
     try {
-        zk.sendMessage(dest, { image: { url: link }, caption: menuMsg, footer: "by Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: link }, caption: PIU-MD MenuMsg, footer: "by PIU++" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
